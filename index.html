@@ -1,0 +1,841 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-bs-theme="dark">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Update the 'content' attribute to reflect the actual content description -->
+    <meta name="description" content="Circuito de corrida de rua Corre Apucarana">
+
+    <!-- Modify the 'content' attribute to include appropriate keywords -->
+    <meta name="keywords" content="corrida, Apucarana, corrida de rua">
+
+    <meta name="author" content="Corre Apucarana">
+    <meta name="generator" content="Bootstrap">
+
+    <!-- Change the text within the <title> tag to match the webpage's content -->
+    <title>CORRE APUCARANA</title>
+
+    <!-- 
+        Set the website's favicon and Apple touch icon using the files in the assets/logo folder. You can change these files to your own icons by replacing them with the same names and sizes.
+
+        Be careful if you change the site.webmanifest file, as you need to update the src attribute of the icons array to match the new path of your icon files. Otherwise, your icons may not display correctly on some devices. 
+    -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/icon/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="./assets/img/icon/favicon.ico">
+    <link rel="manifest" href="./assets/img/icon/site.webmanifest">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./assets/libraries/glide/css/glide.core.min.css">
+    <link rel="stylesheet" href="./assets/libraries/aos/aos.css">
+    <link rel="stylesheet" href="./assets/css/main.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Parallax-->
+    <link href="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.css" rel="stylesheet">
+
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <!-- Update the 'title' and 'description' content below to enhance social sharing -->
+    <meta property="og:title" content="CORRE APUCARANA">
+    <meta property="og:description" content="Circuito de corrida de rua Corre Apucarana">
+    <!-- Update with actual absolute image URL like: https://example.com/main.jpg -->
+    <meta property="og:image" content="your_absolute_image_url_goes_here">
+    <!-- Update with the absolute URL of the content like: https://example.com/index.html -->
+    <meta property="og:url" content="your_absolute_content_url_goes_here">
+    <!-- Update with the type of object you’re sharing. (e.g., article, website, etc.) -->
+    <meta property="og:type" content="website">
+    <!-- Defines the content language -->
+    <meta property="og:locale" content="pt_br">
+
+
+    <!-- X/Twitter Card Meta Tags for Social Sharing ->
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Update with your X/Twitter handle ->
+    <meta name="twitter:site" content="@yourtwitterhandle">
+    <!-- Update the 'title' and 'description' content below to enhance social sharing ->
+    <meta name="twitter:title" content="your_title_goes_here">
+    <meta name="twitter:description" content="your_description_goes_here">
+    <!-- Update with actual absolute image URL like: https://example.com/main.jpg ->
+    <meta name="twitter:image" content="your_absolute_image_url_goes_here">
+
+    <!-- 
+        The following line specifies the canonical URL for this page.
+        Replace your_canonical_url_goes_here with the actual canonical URL if needed like: https://example.com/index.html
+        Or just remove it!!!!
+    -->
+    <link rel="canonical" href="">
+    <style>
+        .bg-gradient {
+
+            background: radial-gradient(circle at 18% 20%, rgba(203, 14, 169, 0.46) -20%, rgb(23, 27, 29) 36%) !important;
+        }
+
+
+        .ParallaxVideo {
+            position: absolute;
+            min-width: 100%;
+            min-height: 100%;
+            top: 50%;
+            left: 50%;
+            width: auto;
+            height: auto;
+            transform: translateX(-50%) translateY(-50%);
+            filter: brightness(20%);
+            object-fit: cover;
+
+            z-index: -999;
+        }
+
+        .ParallaxVideo h1 {
+            color: #fff;
+            font-size: 76px;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <!-- loader-wrapper -->
+    <div class="loader-wrapper">
+        <div class="spinner-grow text-primary p-5" role="status">
+            <span class="visually-hidden">Carregando...</span>
+        </div>
+    </div>
+
+
+    <!-- header top -->
+    <div class="navigation position-absolute w-100 rounded-bottom-3 rounded-bottom-sm-4">
+        <nav class="navbar navbar-expand-xl px-2" aria-label="Offcanvas navbar large">
+            <div class="container px-3 py-2">
+                <a class="navbar-brand p-1" href="./index.html">
+                    <!-- <img src="./assets/logo/logo.png" height="32" alt="logo"> -->
+                    <strong class="text-body-emphasis fw-bolder fst-italic"> <span class="relapse-text">CORRE</span>
+                        <span class="garet-text">APUCARANA</span> </strong>
+                </a>
+
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="toggler-icon top-bar"></span>
+                    <span class="toggler-icon middle-bar"></span>
+                    <span class="toggler-icon bottom-bar"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-bottom rounded-top-5 h-auto" tabindex="-1" id="offcanvasNavbar2"
+                    aria-labelledby="offcanvasNavbar2Label">
+                    <div class="offcanvas-header px-4 pt-4 pb-4">
+                        <h5 class="offcanvas-title m-0" id="offcanvasNavbar2Label">
+                            <a class="navbar-brand px-2 py-1" href="javascript:;">
+                                <!-- <img src="./assets/logo/logo.png" height="32" alt="logo"> -->
+                                <strong class="text-body-emphasis fw-bolder fst-italic"> <span
+                                        class="relapse-text">CORRE</span> APUCARANA </strong>
+                            </a>
+                        </h5>
+                        <button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <ul
+                            class="navbar-nav align-items-xl-center justify-content-center flex-grow-1 column-gap-4 row-gap-4">
+                            <li class="nav-item ms-xl-auto" data-bs-dismiss="offcanvas">
+                                <a href="javascript:;" onclick="scrollToSection('#home')"
+                                    class="nav-link rounded-3 px-3 text-base fw-semibold leading-6 text-body-emphasis bg-body-secondary-hover">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li class="nav-item" data-bs-dismiss="offcanvas">
+                                <a href="javascript:;" onclick="scrollToSection('#percurso')"
+                                    class="nav-link rounded-3 px-3 text-base fw-semibold leading-6 text-body-emphasis bg-body-secondary-hover">
+                                    Percurso
+                                </a>
+                            </li>
+
+                            <li class="nav-item" data-bs-dismiss="offcanvas">
+                                <a href="javascript:;" onclick="scrollToSection('#kits')"
+                                    class="nav-link rounded-3 px-3 text-base fw-semibold leading-6 text-body-emphasis bg-body-secondary-hover">
+                                    Kits
+                                </a>
+                            </li>
+
+                            <li class="nav-item" data-bs-dismiss="offcanvas">
+                                <a href="javascript:;" onclick="scrollToSection('#informacoes')"
+                                    class="nav-link rounded-3 px-3 text-base fw-semibold leading-6 text-body-emphasis bg-body-secondary-hover">
+                                    Informações
+                                </a>
+                            </li>
+
+                            <li class="nav-item ms-xl-auto " data-bs-dismiss="offcanvas">
+                                <a href="javascript:;" onclick="scrollToSection('#inscricao')"
+                                    class="btn btn-primary text-white btn-lg rounded-3 px-3 text-base fw-semibold leading-6 w-100 primary">
+                                    Inscreva-se
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- Hero -->
+    <div id="home" class="d-flex align-items-center position-relative overflow-hidden">
+        <div class=" ParallaxVideo jarallax">
+
+            <div class="ParallaxVideo jarallax-video-youtube" data-jarallax
+                data-video-src="https://youtu.be/MRWL7HDa3oQ?si=l4A5wq8YQT86anrD&t=10" data-video-loop="true"
+                data-video-start-time="100" data-video-end-time="120">
+
+                <!-- <video autoplay muted loop id="myVideo">
+                <!--source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4"-->
+                <!-- <source src="./assets/videos/apresentacao_min.mp4" type="video/mp4">
+            </video> -->
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="py-8 py-md-9 py-xl-11">
+                <div class="row gy-5 align-items-center justify-content-between">
+                    <!--div class="col-12 col-xl-6 text-center text-xl-start order-xl-last">
+                        <div class="max-w-2xl mx-auto mx-xl-0 py-5 py-xl-0">
+                            <span class="badge border text-body-emphasis d-inline-flex align-items-center justify-content-between gap-2 rounded-pill fw-medium bg-body-tertiary">
+                                <svg class="text-success" viewBox="0 0 6 6" aria-hidden="true" fill="currentColor" width="0.375rem" height="0.375rem">
+                                    <circle cx="3" cy="3" r="3"></circle>
+                                </svg>
+                                Available for hiring!
+                            </span>
+
+                            <h1 class="m-0 mt-4 text-body-emphasis fw-bold tracking-tight text-6xl" data-aos-delay="0" data-aos="fade" data-aos-duration="1000">
+                                Web & Mobile Dev, Design Excellence.
+                            </h1>
+                            <p class="m-0 mt-4 text-lg leading-8 text-body-secondary" data-aos-delay="100" data-aos="fade" data-aos-duration="1000">
+                                Crafting digital excellence in web/mobile dev and design—your gateway to standout online presence.
+                            </p>
+                            <div class="mt-4 pt-3" data-aos-delay="200" data-aos="fade" data-aos-duration="1000">
+                                <a href="mailto:contact@example.com" class="btn btn-lg btn-primary text-white text-sm fw-semibold">
+                                    Contact me
+                                </a>
+                            </div>
+                        </div>
+                    </div-->
+
+                    <div class="col-12 col-xl-12">
+                        <div class="max-w-2xl mx-auto mx-xl-auto">
+                            <div class="ratio text-center" style="--bs-aspect-ratio: 50%;" data-aos-delay="100"
+                                data-aos="fade-down" data-aos-duration="1000">
+                                <img src="./assets/img/bg/LOGO1.png"
+                                    class="img-fluid object-fit-cover rounded-3 rounded-sm-4 rounded-xl-5"
+                                    alt="Logo Corre Apucarana">
+                            </div>
+
+                            <div class="text-body-emphasis text-center p-4 rounded-4">
+                                <p class="h1 fw-bold leading-8" data-aos-delay="300" data-aos="fade-down"
+                                    data-aos-duration="1000">
+                                    24 DE NOVEMBRO DE 2024
+                                </p>
+
+                                <div class="text-center pt-4 mx-auto wow fadeInUp" data-aos-delay="500"
+                                    data-aos="fade-down" data-aos-duration="1000" style="max-width: 600px;">
+                                    <span
+                                        class="badge border border-success text-success d-inline-flex align-items-center justify-content-between gap-2 rounded-pill fw-medium fs-6 p-3">
+                                        <i class="fa fa-check"></i>
+                                        Inscrições Disponíveis
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="overflow-hidden bg-dark">
+
+        <div class="container pb-6">
+            <h2 class="text-center text-lg fw-semibold leading-8 text-body-emphasis mt-5 mb-5 relapse-text"
+                data-aos-delay="100" data-aos="fade-up" data-aos-duration="1000">
+                REALIZAÇÃO
+            </h2>
+
+            <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-4 row-cols-xl-5 justify-content-center g-4">
+                <div class="mx-0 mx-xl-5" data-aos-delay="200" data-aos="fade-right" data-aos-duration="1000">
+                    <img src="./assets/img/logo/tmm_white_logo.png"
+                        class="img-fluid object-fit-cover rounded-3 rounded-sm-4 rounded-xl-5"
+                        alt="Team Matheus Miguel">
+                </div>
+
+                <div class="mx-0 mx-xl-5" data-aos-delay="300" data-aos="fade-up" data-aos-duration="1000">
+
+                    <img src="./assets/img/logo/keiko_white_logo.png"
+                        class="img-fluid object-fit-cover rounded-3 rounded-sm-4 rounded-xl-5" alt="Keiki Colchões">
+                </div>
+
+                <div class="mx-0 mx-xl-5" data-aos-delay="400" data-aos="fade-left" data-aos-duration="1000">
+
+                    <img src="./assets/img/logo/yellow_stone_white_logo.png"
+                        class="img-fluid object-fit-cover rounded-3 rounded-sm-4 rounded-xl-5" alt="Yellow Stone Park">
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- percurso -->
+    <div id="percurso" class="overflow-hidden py-7 py-sm-8 py-xl-9 bg-body-tertiary">
+        <div class="container">
+            <div class="mb-5 mb-sm-6 mb-xl-7" data-aos-delay="100" data-aos="fade" data-aos-duration="1000">
+                <div class="max-w-xl">
+                    <h2 class="m-0 mt-2 fw-bold tracking-tight text-body-emphasis text-4xl">
+                        Percurso
+                    </h2>
+                </div>
+            </div>
+
+            <div class="row row-cols-1 mx-auto">
+                <div class="col" data-aos-delay="400" data-aos="zoom-in" data-aos-duration="500">
+                    <div class="position-relative rounded-3 rounded-sm-4 rounded-xl-5">
+                        <div class="ratio ratio-21x9">
+                            <img src="https://setelagoas.com.br/wp-content/uploads/2023/04/corrida-democrata-percurso.jpg"
+                                class="object-fit-fill rounded-3 rounded-sm-4 rounded-xl-5" alt="tempalte"
+                                loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- kits -->
+    <div id="kits" class="overflow-hidden py-7 py-sm-8 py-xl-9  bg-dark">
+        <div class="container">
+            <div class="mx-auto max-w-2xl text-center" data-aos-delay="100" data-aos="fade-up" data-aos-duration="1000">
+                <p class="m-0 mt-2 text-primary-emphasis text-4xl tracking-tight fw-bold">
+                    KITS
+                </p>
+                <p class="m-0 mt-4  mb-4 text-body text-lg leading-8">
+                    Confira as opções de kits e valores
+                </p>
+
+            </div>
+            <div
+                class="row row-cols-1 row-cols-xl-3 gy-5 gx-xl-4 mt-1 justify-content-center justify-content-xl-center">
+                <div class="col">
+                    <div class="max-w-xl mx-auto mx-xl-0  bg-body-tertiary rounded-3 rounded-sm-4 rounded-xl-5"
+                        data-aos-delay="100" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="ratio" style="--bs-aspect-ratio: 66.66%;">
+                            <img src="https://s2-ge.glbimg.com/MXkyDkjES-hfdJBUFTwcdnQp5Rk=/0x0:3456x2304/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/k/M/hWc18LRIquaF9SL6Dlkg/img-7564-1-.jpg"
+                                class="object-fit-cover rounded-top-3 rounded-top-sm-4 rounded-top-xl-5"
+                                alt="Service image" loading="lazy">
+                        </div>
+
+                        <div class="p-3 text-center">
+
+                            <p class="m-0 mt-4 mb-2 text-body-emphasis text-lg leading-6 fw-semibold h3">
+                                5KM - KIT STANDART
+                            </p>
+                            <p class="card-title pricing-card-title text-center h1"><span class="text-muted h5">R$
+                                </span>48.98</p>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Medalha de Conclusão</li>
+                                <li>Nº de Peito</li>
+                                <li>Chip</li>
+                                <li>Hidratação</li>
+                                <li>Frutas</li>
+                                <li>&nbsp;</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="max-w-xl mx-auto mx-xl-0  bg-body-tertiary rounded-3 rounded-sm-4 rounded-xl-5"
+                        data-aos-delay="200" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="ratio" style="--bs-aspect-ratio: 66.66%;">
+                            <img src="https://s2-ge.glbimg.com/MXkyDkjES-hfdJBUFTwcdnQp5Rk=/0x0:3456x2304/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/k/M/hWc18LRIquaF9SL6Dlkg/img-7564-1-.jpg"
+                                class="object-fit-cover rounded-top-3 rounded-top-sm-4 rounded-top-xl-5"
+                                alt="Service image" loading="lazy">
+                        </div>
+
+                        <div class="p-3 text-center">
+
+                            <p class="m-0 mt-4 mb-2 text-body-emphasis text-lg leading-6 fw-semibold h3">
+                                5KM - KIT COMPLETO
+                            </p>
+                            <p class="card-title pricing-card-title text-center h1"><span class="text-muted h5">R$
+                                </span>68.98</p>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li><strong>Camiseta</strong></li>
+                                <li>Medalha de Conclusão</li>
+                                <li>Nº de Peito</li>
+                                <li>Chip</li>
+                                <li>Hidratação</li>
+                                <li>Frutas</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="row mt-5" data-aos-delay="200" data-aos="fade-up" data-aos-duration="1000">
+
+                <div class="mx-auto text-center">
+                    <p class="m-0 mt-2 text-light-emphasis text-4xl tracking-tight fw-bold">
+                        RETIRADA DE KIT
+                    </p>
+                    <p class="m-0 my-4 text-body text-lg leading-8">
+                        Sábado, <strong>dia da prova</strong>, 21/07/2024, das 06h10 a 07h30- no local de largada:
+                        em
+                        frente ao Yellow Stone Park (R. Dr. Oswaldo Cruz, 1420 - Centro, Apucarana/PR, 86800-720)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- informações -->
+    <div id="informacoes" class="pb-9 pt-7 bg-black jarallax">
+
+        <img class="jarallax-img bg-opacity-75 bg-black z-n1" style="opacity: .2;"
+            src="https://www.visiteapucarana.com.br/wp-content/uploads/2021/12/DJI_0703.jpg" alt="">
+
+        <div class="container">
+            <div class="position-relative text-white">
+                <div class="px-6 mb-4">
+                    <div class="mx-auto max-w-2xl">
+                        <h2 class="m-0 tracking-tight text-4xl fw-bold text-center" data-aos-delay="100"
+                            data-aos="fade-up" data-aos-duration="1000">
+                            Não se perca no caminho
+                        </h2>
+                        <p class="m-0 mt-4 text-lg leading-8 text-center" data-aos-delay="200" data-aos="fade-up"
+                            data-aos-duration="1000">
+                            Confira o local da largada
+                        </p>
+                    </div>
+                </div>
+                <div class="position-absolutetop-0 h-100 w-100 rounded-3 rounded-sm-4 rounded-xl-5 shadow"
+                    data-aos-delay="400" data-aos="fade" data-aos-duration="1000">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2360804423124!2d-51.463593723883825!3d-23.559963161542406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ec998bed05a8a3%3A0x2199cf58072e4ade!2sYellowstone%20Park%20Apucarana!5e0!3m2!1spt-BR!2sbr!4v1721329856458!5m2!1spt-BR!2sbr"
+                        width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        class="rounded-3 rounded-sm-4 rounded-xl-5"></iframe>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- inscricao -->
+    <div id="inscricao" class="container-fluid service  py-7 py-sm-8 py-xl-9 bg-body-tertiary">
+        <div class="container">
+            <div class="text-center mx-auto" data-aos-delay="200" data-aos="fade-up" data-aos-duration="1000"
+                style="max-width: 600px;">
+                <span
+                    class="badge border border-success text-success d-inline-flex align-items-center justify-content-between gap-2 rounded-pill fw-medium fs-6 p-3">
+                    <i class="fa fa-check"></i>
+                    Inscrições Disponíveis
+                </span>
+                <p class="h1 mb-5 mt-2">Não perca tempo e reserve seu lugar</p>
+            </div>
+            <div class="row g-4" data-aos-delay="300" data-aos="fade-up" data-aos-duration="1000">
+                <div class="col-lg-4">
+                    <div class="nav nav-pills d-flex justify-content-between w-100 h-100 me-4">
+                        <button class="nav-link w-100 d-flex align-items-center text-white border p-4 mb-4 active"
+                            data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
+                            <h5 class="m-0"><i class="fa fa-check text-white me-3"></i>Cris Estética</h5>
+                        </button>
+                        <button class="nav-link w-100 d-flex align-items-center  text-white border p-4 mb-4"
+                            data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
+                            <h5 class="m-0"><i class="fa fa-check  text-white me-3"></i>Dias Couro</h5>
+                        </button>
+                        <button class="nav-link w-100 d-flex align-items-center text-white border p-4 mb-4"
+                            data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
+                            <h5 class="m-0"><i class="fa fa-check  text-white me-3"></i>TVCom Running</h5>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="tab-content w-100">
+                        <div class="tab-pane show active" id="tab-pane-1">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14629.73401996142!2d-51.4662191!3d-23.5528692!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ec997a597bc95f%3A0x113a2eeca78cf7c!2sCris%20Est%C3%A9tica!5e0!3m2!1spt-BR!2sbr!4v1721479526719!5m2!1spt-BR!2sbr"
+                                            width="600" height="450" style="border:0;"
+                                            class="position-absolute rounded w-100 h-100" allowfullscreen=""
+                                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="mb-1 h3">Localização</p>
+                                    <p class="mb-5">Rua Guarapuava, 305 - Centro, Apucarana/PR</p>
+
+                                    <p class="mb-1 h3">Horários</p>
+                                    <p class="mb-4 text-body-emphasis">Horários para a realização das
+                                        inscrições:</p>
+                                    <p><i class="fa fa-clock text-primary me-3"></i>Segunda a sexta - 09:00 às 19:00
+                                    </p>
+                                    <p><i class="fa fa-clock text-primary me-3"></i>Sábado - 09:00 às 13:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-pane-2">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14629.755824322998!2d-51.4626324!3d-23.5526733!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ec9964cc68decf%3A0xd2804ee5cc018a5d!2sDias%20Couro!5e0!3m2!1spt-BR!2sbr!4v1721485472080!5m2!1spt-BR!2sbr"
+                                            width="600" height="450" style="border:0;"
+                                            class="position-absolute rounded w-100 h-100" allowfullscreen=""
+                                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="mb-1 h3">Localização</p>
+                                    <p class="mb-5">Rua Dr. Oswaldo Cruz, 693 - Centro, Apucarana/PR</p>
+
+                                    <p class="mb-1 h3">Horários</p>
+                                    <p class="mb-4 text-body-emphasis">Horários para a realização das
+                                        inscrições:</p>
+                                    <p><i class="fa fa-clock text-primary me-3"></i>Segunda a sexta - 09:00 às 19:00
+                                    </p>
+                                    <p><i class="fa fa-clock text-primary me-3"></i>Sábado - 09:00 às 13:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab-pane-3">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100 align-content-center rounded bg-dark">
+                                        <img src="./assets/img/logo/corre_apucarana_white_logo.png"
+                                            class="object-fit-contain  rounded w-100 h-100" width="200" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="mb-1 h3">Online</p>
+                                    <p class="mb-5">Na modalidade online o valor é acrecido de taxa de serviço</p>
+
+                                    <p class="mb-1 h3">Valores</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>STANDARD - R$ 48,69 + R$5,00
+                                        (Taxa
+                                        de serviço)</p>
+                                    <p><i class="fa fa-check text-primary me-3"></i>COMPLETO - R$ 68,69 + R$5,00
+                                        (Taxa
+                                        de serviço)</p>
+                                    <a class="btn  btn-primary" href="#">Inscrição</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- inscricao End -->
+
+    <div class="overflow-hidden py-7 py-sm-8 py-xl-9  bg-dark">
+        <div class="container">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="m-0 mb-4 text-body-emphasis tracking-tight leading-10 text-2xl fw-bold" data-aos-delay="200"
+                    data-aos="fade-up" data-aos-duration="1000">
+                    DÚVIDAS FREQUENTES
+                </h2>
+
+                <div class="accordion accordion-flush pt-2" id="accordionFlushExample2">
+                    <div class="accordion-item pb-4" data-aos-delay="300" data-aos="fade-up" data-aos-duration="1000"
+                        style="border-top: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);">
+                        <h3 class="accordion-header">
+                            <button
+                                class="accordion-button align-items-start p-0 pt-4 text-body-emphasis leading-7 text-base shadow-none collapsed fw-semibold"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                aria-expanded="false" aria-controls="flush-collapseOne">
+                                Onde é a Largada?
+                            </button>
+                        </h3>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse "
+                            data-bs-parent="#accordionFlushExample2">
+                            <div class="accordion-body p-0 pe-5 mx-0 mb-0 mt-2 text-body-secondary leading-7 text-base">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item pb-4" data-aos-delay="350" data-aos="fade-up" data-aos-duration="1000">
+                        <h3 class="accordion-header">
+                            <button
+                                class="accordion-button align-items-start p-0 pt-4 text-body-emphasis leading-7 text-base shadow-none collapsed fw-semibold"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Qual o horário da largada?
+                            </button>
+                        </h3>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse "
+                            data-bs-parent="#accordionFlushExample2">
+                            <div class="accordion-body p-0 pe-5 mx-0 mb-0 mt-2 text-body-secondary leading-7 text-base">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item pb-4" data-aos-delay="400" data-aos="fade-up" data-aos-duration="1000">
+                        <h3 class="accordion-header">
+                            <button
+                                class="accordion-button align-items-start p-0 pt-4 text-body-emphasis leading-7 text-base shadow-none collapsed fw-semibold"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                aria-expanded="false" aria-controls="flush-collapseThree">
+                                Quanto tempo tenho para concluir a prova?
+                            </button>
+                        </h3>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse "
+                            data-bs-parent="#accordionFlushExample2">
+                            <div class="accordion-body p-0 pe-5 mx-0 mb-0 mt-2 text-body-secondary leading-7 text-base">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item pb-4" data-aos-delay="450" data-aos="fade-up" data-aos-duration="1000">
+                        <h3 class="accordion-header">
+                            <button
+                                class="accordion-button align-items-start p-0 pt-4 text-body-emphasis leading-7 text-base shadow-none collapsed fw-semibold"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                                aria-expanded="false" aria-controls="flush-collapseFour">
+                                Até quando posso me inscrever?
+                            </button>
+                        </h3>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse "
+                            data-bs-parent="#accordionFlushExample2">
+                            <div class="accordion-body p-0 pe-5 mx-0 mb-0 mt-2 text-body-secondary leading-7 text-base">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item pb-4" data-aos-delay="500" data-aos="fade-up" data-aos-duration="1000">
+                        <h3 class="accordion-header">
+                            <button
+                                class="accordion-button align-items-start p-0 pt-4 text-body-emphasis leading-7 text-base shadow-none collapsed fw-semibold"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive"
+                                aria-expanded="false" aria-controls="flush-collapseFive">
+                                Qual a idade mínima para se inscrever?
+                            </button>
+                        </h3>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse "
+                            data-bs-parent="#accordionFlushExample2">
+                            <div class="accordion-body p-0 pe-5 mx-0 mb-0 mt-2 text-body-secondary leading-7 text-base">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item pb-4" data-aos-delay="550" data-aos="fade-up" data-aos-duration="1000">
+                        <h3 class="accordion-header">
+                            <button
+                                class="accordion-button align-items-start p-0 pt-4 text-body-emphasis leading-7 text-base shadow-none collapsed fw-semibold"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix"
+                                aria-expanded="false" aria-controls="flush-collapseSix">
+                                Como faço para pedir reembolso?
+                            </button>
+                        </h3>
+                        <div id="flush-collapseSix" class="accordion-collapse collapse "
+                            data-bs-parent="#accordionFlushExample2">
+                            <div class="accordion-body p-0 pe-5 mx-0 mb-0 mt-2 text-body-secondary leading-7 text-base">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item pb-4" data-aos-delay="600" data-aos="fade-up" data-aos-duration="1000">
+                        <h3 class="accordion-header">
+                            <button
+                                class="accordion-button align-items-start p-0 pt-4 text-body-emphasis leading-7 text-base shadow-none collapsed fw-semibold"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven"
+                                aria-expanded="false" aria-controls="flush-collapseSeven">
+                                Quando e onde posso retirar meu kit?
+                            </button>
+                        </h3>
+                        <div id="flush-collapseSeven" class="accordion-collapse collapse "
+                            data-bs-parent="#accordionFlushExample2">
+                            <div class="accordion-body p-0 pe-5 mx-0 mb-0 mt-2 text-body-secondary leading-7 text-base">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item pb-4" data-aos-delay="650" data-aos="fade-up" data-aos-duration="1000">
+                        <h3 class="accordion-header">
+                            <button
+                                class="accordion-button align-items-start p-0 pt-4 text-body-emphasis leading-7 text-base shadow-none collapsed fw-semibold"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight"
+                                aria-expanded="false" aria-controls="flush-collapseEight">
+                                Não vou conseguir retirar meu kit, como faço?
+                            </button>
+                        </h3>
+                        <div id="flush-collapseEight" class="accordion-collapse collapse "
+                            data-bs-parent="#accordionFlushExample2">
+                            <div class="accordion-body p-0 pe-5 mx-0 mb-0 mt-2 text-body-secondary leading-7 text-base">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="overflow-hidden bg-dark">
+
+        <div class="container">
+            <hr class="my-2 text-body-emphasis opacity-10">
+        </div>
+    </div>
+
+
+    <footer class="bg-dark">
+        <div class="container py-4">
+            <div class="d-flex flex-column flex-md-row gap-4 justify-content-md-between align-items-md-center">
+                <p class="text-body-tertiary text-xs leading-5 mb-0">
+                    ©
+                    <span class="current-year"></span>
+                    Corre Apucarana, todos os direitos reservados.
+                </p>
+
+                <div class="order-first order-md-last">
+                    <!-- intagram icon -->
+                    <a href="javascript:;" class="btn bg-body-secondary text-body social my-2 p-2 me-3 rounded-circle">
+                        <span class="d-flex justify-content-center align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                            </svg>
+                        </span>
+                    </a>
+
+                    <!-- linkedIn icon -->
+                    <a href="javascript:;" class="btn bg-body-secondary text-body social my-2 p-2 me-3 rounded-circle">
+                        <span class="d-flex justify-content-center align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                viewBox="0 0 448 512">
+                                <path
+                                    d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                            </svg>
+                        </span>
+                    </a>
+
+                    <!-- github icon -->
+                    <a href="javascript:;" class="btn bg-body-secondary text-body social my-2 p-2 me-3 rounded-circle">
+                        <span class="d-flex justify-content-center align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                viewBox="0 0 496 512">
+                                <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                            </svg>
+                        </span>
+                    </a>
+
+                    <!-- youtube icon -->
+                    <a href="javascript:;" class="btn bg-body-secondary text-body social my-2 p-2 rounded-circle">
+                        <span class="d-flex justify-content-center align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Back to top button -->
+    <button type="button"
+        class="btn btn-primary btn-back-to-top rounded-circle justify-content-center align-items-center p-2 text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up-short"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5" />
+        </svg>
+    </button>
+
+
+
+    <!-- Bootstrap JavaScript: Bundle with Popper -->
+    <script src="./assets/libraries/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libraries/glide/glide.min.js"></script>
+    <script src="./assets/libraries/aos/aos.js"></script>
+
+    <!-- Jarallax JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.js"></script>
+
+    <!-- Jarallax JS: Optional video extension -->
+    <script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax-video.min.js"></script>
+
+
+    <script src="./assets/js/scripts.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Relapse var';
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url("RElapse-Regular.otf") format("opentype"), url("RElapse-Regular.ttf") format("truetype");
+}
