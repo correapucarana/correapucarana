@@ -241,12 +241,27 @@ if (glideElements.length > 0) {
   -----      parallax      -----
   ----------------------------------
 */
-setTimeout(function () {
-    jarallax(document.querySelectorAll('.jarallax'), {
-        speed: 0.2,
-    });
-}, 250);
+//setTimeout(function () {
+  //  jarallax(document.querySelectorAll('.jarallax'), {
+    //    speed: 0.2,
+   // });
+//}, 250);
 
+jarallax(document.querySelectorAll('.jarallax'), {
+    speed: 0.2,
+  });
+
+  jarallax(document.querySelectorAll('.jarallax-video-intro'), {
+    speed: 0.0,
+    videoSrc: 'https://www.youtube.com/watch?v=MRWL7HDa3oQ&t=10s',
+    videoLoop: true,
+    videoStartTime:73,
+    videoClass: 'jarallax-video-youtube',
+    videoEndTime:150
+
+
+
+  });
 // jarallax(document.querySelectorAll('.ParallaxVideo'), {
 //     disableParallax: /iPad|iPhone|iPod|Android/,
 //     disableVideo: /iPad|iPhone|iPod|Android/

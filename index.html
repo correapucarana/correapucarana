@@ -81,7 +81,7 @@
 
 
         .ParallaxVideo {
-            position: absolute;
+            position: fixed;
             min-width: 100%;
             min-height: 100%;
             top: 50%;
@@ -91,7 +91,6 @@
             transform: translateX(-50%) translateY(-50%);
             filter: brightness(20%);
             object-fit: cover;
-
             z-index: -999;
         }
 
@@ -197,18 +196,16 @@
 
     <!-- Hero -->
     <div id="home" class="d-flex align-items-center position-relative overflow-hidden">
-        <div class=" ParallaxVideo jarallax">
+        
 
-            <div class="ParallaxVideo jarallax-video-youtube" data-jarallax
-                data-video-src="https://youtu.be/MRWL7HDa3oQ?si=l4A5wq8YQT86anrD&t=10" data-video-loop="true"
-                data-video-start-time="100" data-video-end-time="120">
+            <div class="jarallax-video-youtube jarallax-video-intro ParallaxVideo">
 
                 <!-- <video autoplay muted loop id="myVideo">
                 <!--source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4"-->
                 <!-- <source src="./assets/videos/apresentacao_min.mp4" type="video/mp4">
             </video> -->
 
-            </div>
+            
         </div>
         <div class="container">
             <div class="py-8 py-md-9 py-xl-11">
@@ -240,8 +237,8 @@
                         <div class="max-w-2xl mx-auto mx-xl-auto">
                             <div class="ratio text-center" style="--bs-aspect-ratio: 50%;" data-aos-delay="100"
                                 data-aos="fade-down" data-aos-duration="1000">
-                                <img src="./assets/img/bg/LOGO1.png"
-                                    class="img-fluid object-fit-cover rounded-3 rounded-sm-4 rounded-xl-5"
+                                <img src="./assets/img/bg/LOGO1-min.png"
+                                    class="img-fluid object-fit-contain rounded-3 rounded-sm-4 rounded-xl-5"
                                     alt="Logo Corre Apucarana">
                             </div>
 
@@ -254,11 +251,19 @@
                                 <div class="text-center pt-4 mx-auto wow fadeInUp" data-aos-delay="500"
                                     data-aos="fade-down" data-aos-duration="1000" style="max-width: 600px;">
                                     <span
-                                        class="badge border border-success text-success d-inline-flex align-items-center justify-content-between gap-2 rounded-pill fw-medium fs-6 p-3">
+                                        class="badge border border-success text-success d-inline-flex align-items-center justify-content-between gap-2 rounded-pill fw-medium fs-6 p-3 px-5">
                                         <i class="fa fa-check"></i>
                                         Inscrições Disponíveis
                                     </span>
                                 </div>
+                                <div class="text-center pt-4 mx-auto wow fadeInUp visually-hidden" data-aos-delay="500"
+                                data-aos="fade-down" data-aos-duration="1000" style="max-width: 600px; ">
+                                <span
+                                    class="badge border border-danger text-danger d-inline-flex align-items-center justify-content-between gap-2 rounded-pill fw-medium fs-6 p-3 px-5">
+                                    <i class="fa fa-times"></i>
+                                    Inscrições Encerradas
+                                </span>
+                            </div>
                             </div>
 
                         </div>
@@ -315,7 +320,7 @@
             </div>
 
             <div class="row row-cols-1 mx-auto">
-                <div class="col" data-aos-delay="400" data-aos="zoom-in" data-aos-duration="500">
+                <div class="col" data-aos-delay="400" data-aos="fade-in" data-aos-duration="500">
                     <div class="position-relative rounded-3 rounded-sm-4 rounded-xl-5">
                         <div class="ratio ratio-21x9">
                             <img src="https://setelagoas.com.br/wp-content/uploads/2023/04/corrida-democrata-percurso.jpg"
@@ -468,6 +473,7 @@
                 </span>
                 <p class="h1 mb-5 mt-2">Não perca tempo e reserve seu lugar</p>
             </div>
+            <div class="row g-4 visually-hidden" data-aos-delay="300" data-aos="fade-up" data-aos-duration="1000"><p class="h4 text-center">As inscrições encerraram no dia 23 de novembro de 2024</p></div>
             <div class="row g-4" data-aos-delay="300" data-aos="fade-up" data-aos-duration="1000">
                 <div class="col-lg-4">
                     <div class="nav nav-pills d-flex justify-content-between w-100 h-100 me-4">
