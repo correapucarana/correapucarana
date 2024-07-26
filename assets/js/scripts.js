@@ -252,28 +252,19 @@ jarallax(document.querySelectorAll('.jarallax'), {
   });
 
   jarallax(document.querySelectorAll('.jarallax-video-intro'), {
-    speed: 0.0,
-    videoSrc: 'https://www.youtube.com/watch?v=MRWL7HDa3oQ&t=10s',
+    speed: 0.2,
+    videoSrc: 'https://www.youtube.com/watch?v=MfPHUHVc-20',
     videoLoop: true,
     videoStartTime:73,
     videoClass: 'jarallax-video-youtube',
     videoEndTime:150
-
-
-
   });
-// jarallax(document.querySelectorAll('.ParallaxVideo'), {
-//     disableParallax: /iPad|iPhone|iPod|Android/,
-//     disableVideo: /iPad|iPhone|iPod|Android/
-// });
 
 /*
-  ----------------------------------
-  -----      locomotive      -----
-  ----------------------------------
+----------------------------------
+-----      carousel of logos      -----
+----------------------------------
 */
-// const pageContainer = document.querySelector(".my-locomotive");
 
-// const scroller = new LocomotiveScroll({
-//     el: pageContainer, smooth: true
-// })
+var copy = document.querySelector(".logos-slide").cloneNode(true);
+document.querySelector(".logos").appendChild(copy);
