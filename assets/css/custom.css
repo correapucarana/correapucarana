@@ -1,6 +1,11 @@
 .bg-gradient {
-    background-color: aqua;
+    background-color: black;
     background: radial-gradient(circle at 18% 20%, rgb(203, 14, 168) -70%, rgb(23, 27, 29) 30%) !important;
+}
+
+.bg-gradient-bottom-right {
+    background-color: black;
+    background: radial-gradient(circle at 78% 67%, rgb(203, 14, 168) -70%, rgb(23, 27, 29) 30%) !important;
 }
 
 .parallaxVideo {
