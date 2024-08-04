@@ -242,24 +242,29 @@ if (glideElements.length > 0) {
   ----------------------------------
 */
 //setTimeout(function () {
-  //  jarallax(document.querySelectorAll('.jarallax'), {
-    //    speed: 0.2,
-   // });
+//  jarallax(document.querySelectorAll('.jarallax'), {
+//    speed: 0.2,
+// });
 //}, 250);
 
 jarallax(document.querySelectorAll('.jarallax'), {
     speed: 0.2,
-  });
+});
 
-  jarallax(document.querySelectorAll('.jarallax-video-intro'), {
+jarallax(document.querySelectorAll('.jarallax-video-intro'), {
     speed: 0.2,
     videoSrc: 'https://www.youtube.com/watch?v=MfPHUHVc-20',
     videoLoop: true,
-    videoStartTime:73,
+    videoStartTime: 73,
     videoClass: 'jarallax-video-youtube',
-    videoEndTime:150
-  });
+    videoEndTime: 150
+});
 
+
+// window.onload = () => {
+//     const myModal = new bootstrap.Modal('#instagramModal');
+//     myModal.show();
+// }
 /*
 ----------------------------------
 -----      carousel of logos      -----
