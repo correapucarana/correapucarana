@@ -95,13 +95,15 @@
 }
 
 .event-date .day {
-    font-size: 24px;
+    font-size: 32px;
     line-height: 1.2;
+    font-weight: bold;
 }
 
 .event-date .month {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.2;
+    font-weight: 300;
 }
 
 .event-info {
@@ -123,10 +125,6 @@
     font-weight: bold;
 }
 
-.title-section {
-    text-align: center;
-    margin-bottom: 20px;
-}
 
 .border-title-section {
     border-bottom: 10px solid #6a0dad;
@@ -135,41 +133,33 @@
     /* Garante que a borda cubra apenas o texto */
 }
 
-.title-section p {
-    margin: 10px 0 0;
-    font-size: 18px;
-    color: #ff1493;
-}
 
 .item {
     margin-bottom: 20px;
 }
 
 .circle {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     background-color: #6a0dad;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-
-}
-
-
-.item .icon-container {
-    margin: auto;
     font-size: 50px;
+    margin: auto;
+
 }
 
 .item h6 {
     font-size: 1.2rem;
-    margin-bottom: 8px;
+    margin-top: 1.2rem;
 }
 
 .item p {
     color: #ff1493;
+    margin-top: 1rem;
 
 }
 
