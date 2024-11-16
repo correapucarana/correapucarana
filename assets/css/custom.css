@@ -1,12 +1,17 @@
+:root {
+    --radial-gradient: radial-gradient(circle at 18% 20%, rgb(203, 14, 168) -70%, rgb(23, 27, 29) 30%);
+}
+
 .bg-gradient {
     background-color: black;
-    background: radial-gradient(circle at 18% 20%, rgb(203, 14, 168) -70%, rgb(23, 27, 29) 30%) !important;
+    background-image: var(--radial-gradient) !important;
 }
 
 .bg-gradient-bottom-right {
     background-color: black;
     background: radial-gradient(circle at 78% 67%, rgb(203, 14, 168) -70%, rgb(23, 27, 29) 30%) !important;
 }
+
 
 .parallaxVideo {
     position: fixed;
@@ -72,4 +77,106 @@
 .logos-slide img {
     height: 70px;
     margin: 0 40px;
+}
+
+.event {
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.event-date {
+    flex-direction: column;
+    margin: 20px;
+    flex-shrink: 0;
+}
+
+.event-date .day {
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.event-date .month {
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.event-info {
+    flex: 1;
+}
+
+.event-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.event-time {
+    color: #6a0dad;
+    font-weight: bold;
+}
+
+.event-location {
+    color: #ff1493;
+    font-weight: bold;
+}
+
+.title-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.border-title-section {
+    border-bottom: 10px solid #6a0dad;
+    /* Adiciona um traço abaixo do título */
+    display: inline-block;
+    /* Garante que a borda cubra apenas o texto */
+}
+
+.title-section p {
+    margin: 10px 0 0;
+    font-size: 18px;
+    color: #ff1493;
+}
+
+.item {
+    margin-bottom: 20px;
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #6a0dad;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.item .icon-container {
+    margin: auto;
+    font-size: 50px;
+}
+
+.item h6 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.item p {
+    color: #ff1493;
+
+}
+
+.footer {
+    margin-top: 30px;
+}
+
+.footer p {
+    font-size: 1.2rem;
 }
