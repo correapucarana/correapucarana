@@ -58,7 +58,6 @@
 
         gtag('config', 'G-P3PJHGB685');
     </script>
-
 </head>
 
 <body>
@@ -135,13 +134,20 @@
                                     Informações
                                 </a>
                             </li>
-
                             <li class="nav-item ms-xl-auto " data-bs-dismiss="offcanvas">
+                                <a href="javascript:;" onclick="scrollToSection('#entrega-kits')"
+                                    class="btn btn-secondary text-white btn-lg rounded-3 px-3 text-base fw-semibold leading-6 primary"
+                                    style="min-width: 150px;">
+                                    Entrega do Kit
+                                </a>
+                            </li>
+
+                            <!-- <li class="nav-item ms-xl-auto " data-bs-dismiss="offcanvas">
                                 <a href="javascript:;" onclick="scrollToSection('#inscricao')"
                                     class="btn btn-primary text-white btn-lg rounded-3 px-3 text-base fw-semibold leading-6 w-100 primary">
                                     Inscreva-se
                                 </a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </div>
@@ -173,16 +179,16 @@
 
                                 <div class="text-center pt-4 mx-auto wow fadeInUp" data-aos-delay="500"
                                     data-aos="fade-down" data-aos-duration="1000" style="max-width: 600px;">
-                                    <a href="javascript:;" onclick="scrollToSection('#inscricao')"
+                                    <!-- <a href="javascript:;" onclick="scrollToSection('#inscricao')"
                                         class="btn btn-primary text-white btn-lg rounded-3 px-3 text-base fw-semibold leading-6 primary"
                                         style="min-width: 150px;">
                                         Inscreva-se
+                                    </a> -->
+                                    <a href="javascript:;" onclick="scrollToSection('#entrega-kits')"
+                                        class="btn btn-secondary text-white btn-lg rounded-3 px-3 text-base fw-semibold leading-6 primary"
+                                        style="min-width: 150px;">
+                                        Entrega do Kit
                                     </a>
-                                    <!--span
-                                        class="badge border border-white text-white d-inline-flex align-items-center justify-content-between gap-2 rounded-pill fw-medium fs-6 p-3">
-                                        <i class="fa fa-check"></i>
-                                        Inscrições Disponíveis
-                                    </span-->
                                 </div>
                             </div>
 
@@ -364,7 +370,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-5" data-aos-delay="200" data-aos="fade-up" data-aos-duration="1000">
+            <div id="entrega-kits" class="row mt-5" data-aos-delay="200" data-aos="fade-up" data-aos-duration="1000">
 
                 <div class="mx-auto text-center">
                     <p
@@ -428,14 +434,14 @@
 
                                             <span class="mt-2"><a
                                                     href="https://drive.google.com/file/d/1RkkUjMvJve9cgoUF-D6jsHpY1acVoFrq/view?usp=drivesdk"
-                                                    target="_blank" class="btn btn-primary"><i
-                                                        class="fa fa-download"></i>&nbsp;
+                                                    target="_blank" class="btn btn-primary">
+                                                    <i class="fa fa-download"></i>&nbsp;
                                                     FÍSICO
                                                     (PDF)</a></span>
                                             <span class="mx-2">&nbsp;OU&nbsp;</span>
                                             <span class="mt-2"><a href="https://forms.gle/ta8E5tk87DyB7EjZA"
-                                                    target="_blank" class="btn btn-primary"><i
-                                                        class=" fa fa-upload"></i>&nbsp;
+                                                    target="_blank" class="btn btn-primary">
+                                                    <i class=" fa fa-upload"></i>&nbsp;
                                                     DIGITAL
                                                     (FORMS)</a></span>
                                         </p>
@@ -557,10 +563,15 @@
         <div class="container">
             <div class="text-center mx-auto" data-aos-delay="200" data-aos="fade-up" data-aos-duration="1000"
                 style="max-width: 600px;">
-                <span
+                <!--span
                     class="badge border border-success text-success d-inline-flex align-items-center justify-content-between gap-2 rounded-pill fw-medium fs-6 p-3">
                     <i class="fa fa-check"></i>
                     Inscrições Disponíveis
+                </span-->
+                <span
+                    class="badge border border-danger text-danger d-inline-flex align-items-center justify-content-between gap-2 rounded-pill fw-medium fs-6 p-3">
+                    <ion-icon name="warning-outline"></ion-icon>
+                    Inscrições Encerradas
                 </span>
                 <p class="h1 mt-2">Não perca tempo e reserve seu lugar</p>
                 <p class="m-0 mt-2 mb-5 text-lg leading-8 text-center text-info" data-aos-delay="250" data-aos="fade-up"
@@ -570,7 +581,7 @@
                 </p>
             </div>
 
-            <div class="row g-4" data-aos-delay="300" data-aos="fade-up" data-aos-duration="1000">
+            <div class="row g-4 hiden-blur" data-aos-delay="300" data-aos="fade-up" data-aos-duration="1000">
                 <div class="col-lg-4">
                     <div class="nav nav-pills d-flex justify-content-between w-100 h-100 me-4">
                         <button class="nav-link w-100 d-flex align-items-center text-white border p-4 mb-4 active"
