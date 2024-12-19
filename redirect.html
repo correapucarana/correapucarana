@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function () {
+            // Captura o código da URL
+            var urlParams = new URLSearchParams(window.location.search);
+            var code = urlParams.get('code');
+            // Envie o código para o seu app ou faça o que for necessário
+            window.location.href = "seuapp://callback?code=" + code;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Redirecionando...</h1>
+</body>
+
+</html>
