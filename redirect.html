@@ -4,14 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Redirecionando...</title>
     <script>
+        // Função que será chamada quando a página carregar
         window.onload = function () {
             // Captura o código da URL
             var urlParams = new URLSearchParams(window.location.search);
-            var code = urlParams.get('code');
-            // Envie o código para o seu app ou faça o que for necessário
-            window.location.href = "app_running://callback?code=" + code;
+            var code = urlParams.get('code');  // Obtém o parâmetro 'code'
+
+            if (code) {
+                // Envia o código para o seu aplicativo Flutter usando o esquema personalizado
+                window.location.href = "myapp://callback?code=" + code;  // Seu esquema personalizado
+            }
         }
     </script>
 </head>
