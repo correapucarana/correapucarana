@@ -42,7 +42,8 @@
     <!-- Open Graph Meta Tags for Social Sharing -->
     <meta property="og:title" content="Corre Apucarana">
     <meta property="og:description" content="Circuito de corrida de rua Corre Apucarana">
-    <meta property="og:image" content="https://correapucarana.com.br/assets/img/logo/corre-apucarana-logo-min.png">
+    <meta property="og:image"
+        content="https://correapucarana.com.br/assets/img/corre-apucarana-2/logo/corre-apucarana-logo-min.png">
     <meta property="og:url" content="https://correapucarana.com.br/index.html">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="pt_BR">
@@ -135,27 +136,29 @@
                                     Informações
                                 </a>
                             </li>
-                            <li class="nav-item ms-xl-auto " data-bs-dismiss="offcanvas">
-                                <a href="javascript:;" onclick="scrollToSection('#atualizacoes')"
+                            <li id="header-button" class="nav-item ms-xl-auto" data-bs-dismiss="offcanvas">
+                                <!-- <a href="javascript:;" onclick="scrollToSection('#atualizacoes')"
                                     class="btn btn-success text-white btn-lg rounded-3 px-3 text-base fw-semibold leading-6 primary"
                                     style="min-width: 150px;">
                                     Fotografias
-                                </a>
-                            </li>
-                            <!-- <li class="nav-item ms-xl-auto " data-bs-dismiss="offcanvas">
+                            </a> -->
+                                <!-- 
                                 <a href="javascript:;" onclick="scrollToSection('#entrega-kits')"
                                     class="btn btn-secondary text-white btn-lg rounded-3 px-3 text-base fw-semibold leading-6 primary"
                                     style="min-width: 150px;">
                                     Entrega do Kit
                                 </a>
-                            </li> -->
-
-                            <!-- <li class="nav-item ms-xl-auto " data-bs-dismiss="offcanvas">
+                             -->
+                                <!-- 
                                 <a href="javascript:;" onclick="scrollToSection('#inscricao')"
                                     class="btn btn-primary text-white btn-lg rounded-3 px-3 text-base fw-semibold leading-6 w-100 primary">
                                     Inscreva-se
                                 </a>
-                            </li> -->
+                            -->
+                            </li>
+
+
+
                         </ul>
                     </div>
                 </div>
@@ -164,9 +167,14 @@
     </div>
 
     <!-- Hero -->
-    <div id="home" class="d-flex align-items-center position-relative overflow-hidden">
-        <div class="parallaxVideo">
-            <div class=" parallaxVideo jarallax-video-intro"></div>
+    <div id="home" class="d-flex align-items-center position-relative overflow-hidden h-100vh">
+        <div class="home-background ">
+            <!--div class="parallaxVideo jarallax-video-intro"></div-->
+
+            <div class="home-background jarallax" data-jarallax data-speed="0.2">
+                <img class="jarallax-img" src="./assets/img/corre-apucarana-2/logo/home-background.jpg"
+                    alt="Home Background">
+            </div>
         </div>
         <div class="container">
             <div class="py-8 py-md-9 py-xl-11">
@@ -175,34 +183,36 @@
                         <div class="max-w-2xl mx-auto mx-xl-auto">
                             <div class="ratio text-center" style="--bs-aspect-ratio: 40%;" data-aos-delay="100"
                                 data-aos="fade-down" data-aos-duration="1000">
-                                <img src="./assets/img/logo/corre-apucarana-logo-min.png"
+                                <img id="logo-home"
+                                    src="./assets/img/corre-apucarana-2/logo/corre-apucarana-logo-min.png"
                                     class="img-fluid object-fit-contain" alt="Logo Corre Apucarana">
                             </div>
 
                             <div class="text-body-emphasis text-center p-4 rounded-4 mt-3">
-                                <p class="h1 fw-bold leading-8" data-aos-delay="300" data-aos="fade-down"
-                                    data-aos-duration="1000">
-                                    30 DE NOVEMBRO DE 2024
+                                <p id="data-evento" class="h1 fw-bold leading-8" data-aos-delay="300"
+                                    data-aos="fade-down" data-aos-duration="1000">
+
                                 </p>
 
-                                <div class="text-center pt-4 mx-auto wow fadeInUp" data-aos-delay="500"
-                                    data-aos="fade-down" data-aos-duration="1000" style="max-width: 600px;">
-                                    <!-- <a href="javascript:;" onclick="scrollToSection('#inscricao')"
+                                <div id="home-button" class="text-center pt-4 mx-auto wow fadeInUp "
+                                    data-aos-delay="500" data-aos="fade-down" data-aos-duration="1000"
+                                    style="max-width: 600px;">
+                                    <a href="javascript:;" onclick="scrollToSection('#inscricao')"
                                         class="btn btn-primary text-white btn-lg rounded-3 px-3 text-base fw-semibold leading-6 primary"
                                         style="min-width: 150px;">
                                         Inscreva-se
-                                    </a> -->
+                                    </a>
                                     <!-- <a href="javascript:;" onclick="scrollToSection('#entrega-kits')"
                                         class="btn btn-secondary text-white btn-lg rounded-3 px-3 text-base fw-semibold leading-6 primary"
                                         style="min-width: 150px;">
                                         Entrega do Kit
                                     </a> -->
 
-                                    <a href="javascript:;" onclick="scrollToSection('#atualizacoes')"
+                                    <!--a href="javascript:;" onclick="scrollToSection('#atualizacoes')"
                                         class="btn btn-success text-white btn-lg rounded-3 px-3 text-base fw-semibold leading-6 primary"
                                         style="min-width: 150px;">
                                         Fotografias
-                                    </a>
+                                    </a-->
                                 </div>
                             </div>
 
@@ -213,102 +223,24 @@
         </div>
     </div>
 
-
     <div class="overflow-hidden bg-dark">
-
-        <div class="container pb-6">
-            <h2 class="text-center text-lg fw-semibold leading-8 text-body-emphasis mt-5 mb-5 relapse-text"
-                data-aos-delay="100" data-aos="fade-up" data-aos-duration="1000">
-                REALIZAÇÃO
-            </h2>
-
-            <div
-                class="row row-cols-2 row-cols-sm-3 row-cols-lg-4 row-cols-xl-5 justify-content-center align-items-center">
-                <div class="mx-0 mx-xl-5 mx-sm-1 realizadores" data-aos-delay="200" data-aos="fade-right"
-                    data-aos-duration="1000">
-                    <img src="./assets/img/logo/team-matheus-miguel-logo-white.png"
-                        class="img-fluid object-fit-contain  align-middle" alt="Team Matheus Miguel">
-                </div>
-                <div class="mx-0 mx-xl-5 mx-sm-1 realizadores" data-aos-delay="200" data-aos="fade-left"
-                    data-aos-duration="1000">
-                    <img src="./assets/img/logo/yellow-stone-logo-white.png" class="img-fluid object-fit-contain"
-                        alt="Yellow Stone Park">
-                </div>
-            </div>
-        </div>
+        <div class="container pb-6 organizers-container"></div>
     </div>
 
+    <!-- Seção de Patrocinador Oficial -->
     <div class="overflow-hidden bg-danger">
-        <div class="container pb-6">
-            <h2 class="text-center text-lg fw-semibold leading-8 text-body-emphasis mt-5 mb-5 relapse-text"
-                data-aos-delay="100" data-aos="fade-up" data-aos-duration="1000">
-                PATROCINADOR OFICIAL
-            </h2>
-
-            <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-4 row-cols-xl-5 justify-content-center">
-                <div class="mx-0 mx-xl-5 mx-sm-1 realizadores" data-aos-delay="200" data-aos="fade-up"
-                    data-aos-duration="1000">
-                    <img src="./assets/img/logo/oficial-med-logo-white.png" class="img-fluid object-fit-contain"
-                        alt="Oficial Med Logo">
-                </div>
-            </div>
-        </div>
+        <div class="container pb-6 main-sponsors-container"></div>
     </div>
 
+    <!-- Seção de Patrocinadores -->
     <div class="overflow-hidden bg-black">
-        <div class="container pb-6">
-            <h2 class="text-center text-lg fw-semibold leading-8 mt-5 mb-5 relapse-text text-white" data-aos-delay="100"
-                data-aos="fade-up" data-aos-duration="1000">
-                PATROCINADORES
-            </h2>
-
-            <div class="row" data-aos-delay="500" data-aos="fade-in" data-aos-duration="1000">
-                <div class="logos">
-                    <div class="logos-slide">
-                        <img src="assets/img/patrocinadores/oficial-med.png" alt="OFICIAL MED" loading="lazy">
-                        <img src="assets/img/patrocinadores/keiko.png" alt="KEIKO" loading="lazy">
-                        <img src="assets/img/patrocinadores/cris-estetica.png" alt="CRIS ESTÉTICA" loading="lazy">
-                        <img src="assets/img/patrocinadores/trevisan-tintas.png" alt="TREVISAN TINTAS" loading="lazy">
-                        <img src="assets/img/patrocinadores/geracao-modas.png" alt="GERAÇÃO MODAS" loading="lazy">
-                        <img src="assets/img/patrocinadores/academia-action.png" alt="ACTION" loading="lazy">
-                        <img src="assets/img/patrocinadores/tripas-apucarana.png" alt="TRIPAS APUCARANA" loading="lazy">
-                        <img src="assets/img/patrocinadores/sunap.png" alt="SUNAP" loading="lazy">
-                        <img src="assets/img/patrocinadores/bonny-men.png" alt="BONNYMAN" loading="lazy">
-                        <img src="assets/img/patrocinadores/bruno-e-flavia.png" alt="BRUNO E FLAVIA" loading="lazy">
-                        <img src="assets/img/patrocinadores/cristal-select.png" alt="ÁGUA CRISTAL" loading="lazy">
-                        <img src="assets/img/patrocinadores/amove.png" alt="AMOVE" loading="lazy">
-                        <img src="assets/img/patrocinadores/facnopar.png" alt="FACNOPAR" loading="lazy">
-                        <img src="assets/img/patrocinadores/unimed.png" alt="UNIMED" loading="lazy">
-                    </div>
-                </div>
-
-            </div>
-        </div>
+        <div class="container pb-6 sponsors-carousel"></div>
     </div>
+
+
 
     <!-- percurso -->
     <div id="percurso" class="overflow-hidden py-7 py-sm-8 py-xl-9 bg-body-tertiary">
-        <div class="container">
-            <div class="mb-5 mb-sm-6 mb-xl-7" data-aos-delay="100" data-aos="fade" data-aos-duration="1000">
-                <div class="max-w-xl">
-                    <h2 class="m-0 mt-2 fw-bold tracking-tight text-body-emphasis text-4xl">
-                        Percurso
-                    </h2>
-                </div>
-            </div>
-
-            <div class="row row-cols-1 mx-md-auto">
-                <div class="col" data-aos-delay="400" data-aos="zoom-in" data-aos-duration="500">
-                    <div class="position-relative rounded-3 ">
-                        <div class="ratio ratio-21x9">
-                            <img src="./assets/img/bg/percurso.jpg" class="object-fit-fill rounded-3" alt="percurso"
-                                loading="lazy">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
     </div>
 
     <!-- kits -->
@@ -323,66 +255,9 @@
                 </p>
             </div>
 
-            <div
-                class="row row-cols-1 row-cols-xl-3 gy-5 gx-xl-4 mt-1 justify-content-center justify-content-xl-center">
-                <div class="col">
-                    <div class="max-w-xl mx-auto mx-xl-0  bg-body-tertiary rounded-3 " data-aos-delay="100"
-                        data-aos="fade-up" data-aos-duration="1000">
-                        <div class="ratio" style="--bs-aspect-ratio: 66.66%;">
-                            <img src="./assets/img/bg/kit-ouro-2024.jpg" class="object-fit-cover rounded-top-3"
-                                alt="Kit Ouro" loading="lazy">
-                        </div>
 
-                        <div class="p-3 text-center">
+            <div id="kits-container" class="row mt-5" data-aos-delay="200" data-aos="fade-up" data-aos-duration="1000">
 
-                            <p class="m-0 mt-4 mb-2 text-body-emphasis text-lg leading-6 fw-semibold h3">
-                                KIT OURO
-                            </p>
-                            <p class="card-title pricing-card-title text-center h1"><span class="text-muted h5">R$
-                                </span>69,90</p>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li><strong>Camiseta</strong></li>
-                                <li>Boné (Masculino) ou Viseira (Feminino) </li>
-                                <li>Número de peito</li>
-                                <li>Seguro atleta</li>
-                                <li>Medalha de conclusão</li>
-                                <li>Hidratação</li>
-                                <li>Frutas</li>
-                            </ul>
-                            <p class="text-danger"><small><i class="fa fa-info-circle"></i> Medalha somente para os que
-                                    concluírem a prova</small></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="max-w-xl mx-auto mx-xl-0  bg-body-tertiary rounded-3" data-aos-delay="200"
-                        data-aos="fade-up" data-aos-duration="1000">
-                        <div class="ratio" style="--bs-aspect-ratio: 66.66%;">
-                            <img src="./assets/img/bg/kit-prata-2024.jpg" class="object-fit-cover rounded-top-3"
-                                alt="Kit Prata" loading="lazy">
-                        </div>
-
-                        <div class="p-3 text-center">
-
-                            <p class="m-0 mt-4 mb-2 text-body-emphasis text-lg leading-6 fw-semibold h3">
-                                KIT PRATA
-                            </p>
-                            <p class="card-title pricing-card-title text-center h1"><span class="text-muted h5">R$
-                                </span>49,90</p>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li>Boné (Masculino) ou Viseira (Feminino) </li>
-                                <li>Número de peito</li>
-                                <li>Seguro atleta</li>
-                                <li>Medalha de conclusão</li>
-                                <li>Hidratação</li>
-                                <li>Frutas</li>
-                                <li>&nbsp;</li>
-                            </ul>
-                            <p class="text-danger"><small><i class="fa fa-info-circle"></i> Medalha somente para os que
-                                    concluírem a prova</small></p>
-                        </div>
-                    </div>
-                </div>
             </div>
             <div id="entrega-kits" class="row mt-5" data-aos-delay="200" data-aos="fade-up" data-aos-duration="1000">
 
@@ -391,109 +266,15 @@
                         class="m-0 mt-5 text-light-emphasis text-4xl tracking-tight fw-bold title-section border-title-section">
                         ENTREGA DOS KITS
                     </p>
-                    <div class="mt-5">
-                        <!--div class="title-section">
-                            <p>LEVE 1 KG DE ALIMENTO NÃO PERECÍVEL PARA RETIRADA DO KIT!</p>
-                        </div-->
-                        <div class="row  mt-2 justify-content-center">
-                            <div class="col-md-12 col-lg-8">
-                                <div class="event d-flex align-items-center bg-dark flex-column flex-md-row">
-                                    <div class="event-date circle mb-3  m-md-1">
-                                        <div class="day">29</div>
-                                        <div class="month">NOVEMBRO</div>
-                                    </div>
-                                    <div class="event-info">
-                                        <div class="event-title">SEXTA-FEIRA | <span class="event-time">10:00 ÀS
-                                                19:00</span></div>
-                                        <div class="event-location">LOCAL: OFICIAL MED APUCARANA</div>
-                                        <div>R. CEL. LUIZ JOSÉ DOS SANTOS, 131 - CENTRO, APUCARANA - PR, 86800-070</div>
-                                    </div>
-                                </div>
-                                <div class="event d-flex align-items-center bg-dark flex-column flex-md-row">
-                                    <div class="event-date circle mb-3 m-md-1">
-                                        <div class="day">30</div>
-                                        <div class="month">NOVEMBRO</div>
-                                    </div>
-                                    <div class="event-info">
-                                        <div class="event-title">SÁBADO | <span class="event-time">13:00 ÀS 18:00</span>
-                                        </div>
-                                        <div class="event-location">LOCAL: YELLOWSTONE PARK</div>
-                                        <div>R. DR. OSWALDO CRUZ, 1420 - CENTRO, APUCARANA - PR, 86800-720</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div id="entrega-kits-container"></div>
 
-                    <div class="row mt-5" data-aos-delay="200" data-aos="fade-up" data-aos-duration="1000">
-                        <div class="mx-auto text-center">
-                            <p
-                                class="m-0 mt-5 mb-3 text-light-emphasis text-4xl tracking-tight fw-bold title-section border-title-section">
-                                O QUE LEVAR?
-                            </p>
-                            <div class="row mt-5">
-                                <div class="col-md-4 item mt-sm-4">
-                                    <div class="circle mb-3"> <ion-icon name="id-card-outline"></ion-icon>
-                                    </div>
-                                    <h6>DOCUMENTO OFICIAL COM FOTO</h6>
-                                    <p>PODE SER DIGITAL</p>
-                                </div>
-                                <div class="col-md-4 item">
-                                    <div class="circle mb-3 item mt-sm-4"> <ion-icon
-                                            name="document-text-outline"></ion-icon>
-                                    </div>
-                                    <h6>TERMO DE RESPONSABILIDADE</h6>
-                                    <div class=" row">
-                                        <p class="justify-content-center align-items-center d-flex flex-sm-row">
 
-                                            <span class="mt-2"><a
-                                                    href="https://drive.google.com/file/d/1RkkUjMvJve9cgoUF-D6jsHpY1acVoFrq/view?usp=drivesdk"
-                                                    target="_blank" class="btn btn-primary">
-                                                    <i class="fa fa-download"></i>&nbsp;
-                                                    FÍSICO
-                                                    (PDF)</a></span>
-                                            <span class="mx-2">&nbsp;OU&nbsp;</span>
-                                            <span class="mt-2"><a href="https://forms.gle/ta8E5tk87DyB7EjZA"
-                                                    target="_blank" class="btn btn-primary">
-                                                    <i class=" fa fa-upload"></i>&nbsp;
-                                                    DIGITAL
-                                                    (FORMS)</a></span>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 item item mt-sm-4">
-                                    <div class="circle mb-3"> <ion-icon name="basket-outline"></ion-icon>
-                                    </div>
-                                    <h6>1KG DE ALIMENTO NÃO PERECÍVEL</h6>
-                                    <p>PARA DOAÇÃO</p>
-                                </div>
-                            </div>
-                            <div class="row mt-md-5 justify-content-center">
-                                <div class="col-lg-4 item  item mt-sm-4">
-                                    <div class="circle  mb-3"> <ion-icon name="bag-handle-outline"></ion-icon>
-                                    </div>
-                                    <h6>RETIRADA PARA TERCEIROS</h6>
-                                    <p>PERMITIDA MEDIANTE APRESENTAÇÃO DE <strong>DOCUMENTO</strong> E <strong>TERMO DE
-                                            RESPONSABILIDADE</strong> DO <strong>ATLETA
-                                            INSCRITO</strong></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-5" data-aos-delay="200" data-aos="fade-up" data-aos-duration="1000">
-                        <div class="mx-auto text-center">
-                            <p
-                                class="m-0 mt-5 mb-3 text-light-emphasis text-4xl tracking-tight fw-bold title-section border-title-section">
-                                AVISOS
-                            </p>
-                            <p class="m-0 my-4 text-lg leading-8 text-danger-emphasis">
-                                <i class="fa fa-info-circle"></i>&nbsp; Não serão entregues kits a terceiros sem o termo
-                                de
-                                responsabilidade.<br>
-                                <i class="fa fa-info-circle"></i>&nbsp; Não serão entregues kits após o horário
-                                previsto.
-                            </p>
-                        </div>
+                    <div id="checklist-entrega-container"></div>
+
+
+                    <div id="warnings-container" class="row mt-5" data-aos-delay="200" data-aos="fade-up"
+                        data-aos-duration="1000">
+
                     </div>
                 </div>
             </div>
@@ -504,8 +285,8 @@
     <!-- informações -->
     <div id="informacoes" class="pb-9 pt-7 bg-black jarallax">
 
-        <img class="jarallax-img bg-opacity-75 bg-black z-n1" style="opacity: .2;"
-            src="https://www.visiteapucarana.com.br/wp-content/uploads/2021/12/DJI_0703.jpg"
+        <img id="mapa-bg" class="jarallax-img bg-opacity-75 bg-black z-n1" style="opacity: .2;"
+            src="https://gazetadacidadepr.com.br/wp-content/uploads/2023/12/RUA-GASTRONOMICA40-1024x576.jpg"
             alt="background yellow stone">
 
         <div class="container">
@@ -525,10 +306,8 @@
 
                 <div class="position-absolutetop-0 h-100 w-100 rounded-3 shadow" data-aos-delay="400" data-aos="fade"
                     data-aos-duration="1000">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2360804423124!2d-51.463593723883825!3d-23.559963161542406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ec998bed05a8a3%3A0x2199cf58072e4ade!2sYellowstone%20Park%20Apucarana!5e0!3m2!1spt-BR!2sbr!4v1721329856458!5m2!1spt-BR!2sbr"
-                        width="100" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade" class="rounded-3 w-100"></iframe>
+                    <iframe id="mapa-largada" width="100" height="350" style="border:0;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-3 w-100"></iframe>
                 </div>
 
             </div>
@@ -542,33 +321,11 @@
                     FOTOGRAFIAS
                 </p>
                 <p class="m-0 mt-4  mb-4 text-body text-lg leading-8">
-                    Confira as imagens do 1º Circuito Corre Apucarana
+                    Reviva os momentos dos nossos eventos
                 </p>
             </div>
 
-            <div class="row justify-content-center mb-lg-9 mb-sm-4">
-                <div class="col-10 col-md-6 col-lg-4 py-3" data-aos-delay="400" data-aos="zoom-in"
-                    data-aos-duration="500">
-                    <div class="rounded-3 bg-white">
-                        <div class="ratio ratio-21x9">
-                            <img src="https://www.eucorro.com/imagens/logo.png" class="object-fit-contain rounded-3 p-2"
-                                alt="eu-corro-com" loading="lazy">
-                        </div>
-                    </div>
-                    <a href="https://www.eucorro.com/fotos/index.php?id=254" target="_blank"
-                        class="btn btn-primary btn-lg text-base w-100  my-3">EUCORRO.COM</a>
-                </div>
-                <div class="col-10 col-md-6 col-lg-4 py-3" data-aos-delay="400" data-aos="zoom-in"
-                    data-aos-duration="500">
-                    <div class="rounded-3 bg-white">
-                        <div class="ratio ratio-21x9">
-                            <img src="https://cdn.focoradical.com.br/newfoco/cms/foco-radical-temp-700879697.png"
-                                class="object-fit-contain rounded-3 p-2" alt="foco-radical" loading="lazy">
-                        </div>
-                    </div>
-                    <a href="https://www.focoradical.com.br/prova/20241130-1o-corre-apucarana-apucarana" target="_blank"
-                        class="btn btn-primary btn-lg text-base w-100 my-3">Foco Radical</a>
-                </div>
+            <div id="fotografias-container" class="row justify-content-center mb-lg-9 mb-sm-4">
             </div>
 
             <div class="row text-white mb-4">
@@ -580,8 +337,9 @@
                         </h2>
                         <p class="m-0 mt-4 text-lg leading-8 text-center text-lg-start" data-aos-delay="200"
                             data-aos="fade-up" data-aos-duration="1000">
-                            Siga o <a href="https://www.instagram.com/teammatheusmiguel/" target="_blank"
-                                class="text-secondary text-decoration-none">@teammatheusmiguel</a> no instagram para
+                            Siga o <a id="instagram-link" target="_blank" href="#"
+                                class="text-secondary text-decoration-none"></a> no
+                            instagram para
                             não
                             perder nenhuma atualização da <strong>Corre Apucarana</strong>.
                         </p>
@@ -593,7 +351,8 @@
                         <div class="justify-content-center">
                             <blockquote class="instagram-media rounded rounded-2 w-100" data-instgrm-version="7"
                                 style="max-height: 320px; width: 100%;">
-                                <a href="https://www.instagram.com/p/C8w3y5NMtkB/"></a>
+                                <a id="instagram-post-link"
+                                    href="https://www.instagram.com/p/DMxgrwqsXBT/?utm_source=ig_web_copy_link&igsh=ZGR1cGprOWZ3dDlv"></a>
                             </blockquote>
                         </div>
                         <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
@@ -622,108 +381,14 @@
                     Inscrições Encerradas
                 </span>
                 <!-- <p class="h1 mt-2">Não perca tempo e reserve seu lugar</p> -->
-                <p class="h1 mt-2">Batemos a nossa meta, agora basta você alcançar a sua!.</p>
-                <p class="m-0 mt-2 mb-5 text-lg leading-8 text-center text-info" data-aos-delay="250" data-aos="fade-up"
-                    data-aos-duration="1000">
-                    Regulamento disponível no site <a href="https://tvcomrunning.com.br/evento/322/" target="_blank"
-                        class="text-decoration-none">TVCom Running</a>
+                <p id="inscricao-frase" class="h1 mt-2"></p>
+                <p id="inscricao-regulamento" class="m-0 mt-2 mb-5 text-lg leading-8 text-center text-info"
+                    data-aos-delay="250" data-aos="fade-up" data-aos-duration="1000">
                 </p>
             </div>
 
-            <div class="row g-4 disabled" data-aos-delay="300" data-aos="fade-up" data-aos-duration="1000">
-                <div class="col-lg-4">
-                    <div class="nav nav-pills d-flex justify-content-between w-100 h-100 me-4">
-                        <button class="nav-link w-100 d-flex align-items-center text-white border p-4 mb-4 active"
-                            data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
-                            <span class="h5 m-0"><i class="fa fa-check  text-white me-3"></i>TVCom Running
-                                (Online)</span>
-                        </button>
-                        <button class="nav-link w-100 d-flex align-items-center text-white border p-4 mb-4 "
-                            data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
-                            <span class="h5 m-0"><i class="fa fa-check text-white me-3"></i>Cris Estética</span>
-                        </button>
-                        <button class="nav-link w-100 d-flex align-items-center  text-white border p-4 mb-4"
-                            data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
-                            <span class="h5 m-0"><i class="fa fa-check  text-white me-3"></i>Dias Couro</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="col-lg-8">
-                    <div class="tab-content w-100">
-                        <div class="tab-pane show active" id="tab-pane-3">
-                            <div class="row g-4">
-                                <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100 align-content-center rounded bg-dark">
-                                        <img src="./assets/img/logo/corre_apucarana_white_logo.png"
-                                            class="object-fit-contain  rounded w-100 h-100" width="200"
-                                            alt="logo Corre Apucarana">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="mb-1 h3">Online</p>
-                                    <p class="mb-5">Na modalidade online o valor é acrecido de taxa de serviço</p>
-
-                                    <p class="mb-1 h3">Valores</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>OURO - R$ 69,90 + R$5,00
-                                        (Taxa de serviço)</p>
-                                    <p><i class="fa fa-check text-primary me-3"></i>PRATA - R$ 49,90 + R$5,00
-                                        (Taxa de serviço)</p>
-                                    <a class="btn  btn-primary btn-lg" href="https://tvcomrunning.com.br/evento/322/"
-                                        target="_blank">Inscrição</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="tab-pane-1">
-                            <div class="row g-4">
-                                <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <iframe
-                                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14629.73401996142!2d-51.4662191!3d-23.5528692!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ec997a597bc95f%3A0x113a2eeca78cf7c!2sCris%20Est%C3%A9tica!5e0!3m2!1spt-BR!2sbr!4v1721479526719!5m2!1spt-BR!2sbr"
-                                            width="600" height="450" style="border:0;"
-                                            class="position-absolute rounded w-100 h-100" allowfullscreen=""
-                                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="mb-1 h3">Localização</p>
-                                    <p class="mb-5">Rua Guarapuava, 305 - Centro, Apucarana/PR</p>
-
-                                    <p class="mb-1 h3">Horários</p>
-                                    <p class="mb-4 text-body-emphasis">Horários para a realização das
-                                        inscrições:</p>
-                                    <p><i class="fa fa-clock text-primary me-3"></i>Segunda a sexta - 09:00 às 17:00
-                                    </p>
-                                    <p><i class="fa fa-clock text-primary me-3"></i>Sábado - 09:00 às 11:30</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="tab-pane-2">
-                            <div class="row g-4">
-                                <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <iframe
-                                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14629.755824322998!2d-51.4626324!3d-23.5526733!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ec9964cc68decf%3A0xd2804ee5cc018a5d!2sDias%20Couro!5e0!3m2!1spt-BR!2sbr!4v1721485472080!5m2!1spt-BR!2sbr"
-                                            width="600" height="450" style="border:0;"
-                                            class="position-absolute rounded w-100 h-100" allowfullscreen=""
-                                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="mb-1 h3">Localização</p>
-                                    <p class="mb-5">Rua Dr. Oswaldo Cruz, 693 - Centro, Apucarana/PR</p>
-
-                                    <p class="mb-1 h3">Horários</p>
-                                    <p class="mb-4 text-body-emphasis">Horários para a realização das
-                                        inscrições:</p>
-                                    <p><i class="fa fa-clock text-primary me-3"></i>Segunda a sexta - 09:00 às 17:00
-                                    </p>
-                                    <p><i class="fa fa-clock text-primary me-3"></i>Sábado - 09:00 às 11:30</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
+            <div id="inscricoes-locais" class="row g-4 disabled" data-aos-delay="300" data-aos="fade-up"
+                data-aos-duration="1000">
             </div>
         </div>
     </div>
@@ -737,149 +402,8 @@
                     DÚVIDAS FREQUENTES
                 </h2>
 
-                <div class="accordion accordion-flush pt-2" id="accordionFlushExample2">
-                    <div class="accordion-item pb-4" data-aos-delay="300" data-aos="fade-up" data-aos-duration="1000"
-                        style="border-top: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);">
-                        <h3 class="accordion-header">
-                            <button
-                                class="accordion-button align-items-start p-0 pt-4 text-body-emphasis leading-7 text-base shadow-none collapsed fw-semibold"
-                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
-                                aria-expanded="false" aria-controls="flush-collapseOne">
-                                Onde é a largada?
-                            </button>
-                        </h3>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse "
-                            data-bs-parent="#accordionFlushExample2">
-                            <div class="accordion-body p-0 pe-5 mx-0 mb-0 mt-2 text-body-secondary leading-7 text-base">
-                                Rua Dr. Oswaldo Cruz, 1420 – Defronte o Parque Yellowstone Park
-                            </div>
-                        </div>
-                    </div>
+                <div class="accordion accordion-flush pt-2" id="perguntas-frequentes"></div>
 
-                    <div class="accordion-item pb-4" data-aos-delay="350" data-aos="fade-up" data-aos-duration="1000">
-                        <h3 class="accordion-header">
-                            <button
-                                class="accordion-button align-items-start p-0 pt-4 text-body-emphasis leading-7 text-base shadow-none collapsed fw-semibold"
-                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
-                                aria-expanded="false" aria-controls="flush-collapseTwo">
-                                Qual o horário da largada?
-                            </button>
-                        </h3>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse "
-                            data-bs-parent="#accordionFlushExample2">
-                            <div class="accordion-body p-0 pe-5 mx-0 mb-0 mt-2 text-body-secondary leading-7 text-base">
-                                Às 19:00 (horário de Brasilia)
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item pb-4" data-aos-delay="400" data-aos="fade-up" data-aos-duration="1000">
-                        <h3 class="accordion-header">
-                            <button
-                                class="accordion-button align-items-start p-0 pt-4 text-body-emphasis leading-7 text-base shadow-none collapsed fw-semibold"
-                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
-                                aria-expanded="false" aria-controls="flush-collapseThree">
-                                Quanto tempo tenho para concluir a prova?
-                            </button>
-                        </h3>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse "
-                            data-bs-parent="#accordionFlushExample2">
-                            <div class="accordion-body p-0 pe-5 mx-0 mb-0 mt-2 text-body-secondary leading-7 text-base">
-                                Limite de 60 (sessenta) minutos para concluir o trajeto.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item pb-4" data-aos-delay="450" data-aos="fade-up" data-aos-duration="1000">
-                        <h3 class="accordion-header">
-                            <button
-                                class="accordion-button align-items-start p-0 pt-4 text-body-emphasis leading-7 text-base shadow-none collapsed fw-semibold"
-                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
-                                aria-expanded="false" aria-controls="flush-collapseFour">
-                                Até quando posso me inscrever?
-                            </button>
-                        </h3>
-                        <div id="flush-collapseFour" class="accordion-collapse collapse "
-                            data-bs-parent="#accordionFlushExample2">
-                            <div class="accordion-body p-0 pe-5 mx-0 mb-0 mt-2 text-body-secondary leading-7 text-base">
-                                Prazo limite: 10 de novembro de 2024
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item pb-4" data-aos-delay="500" data-aos="fade-up" data-aos-duration="1000">
-                        <h3 class="accordion-header">
-                            <button
-                                class="accordion-button align-items-start p-0 pt-4 text-body-emphasis leading-7 text-base shadow-none collapsed fw-semibold"
-                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive"
-                                aria-expanded="false" aria-controls="flush-collapseFive">
-                                Qual a idade mínima para se inscrever?
-                            </button>
-                        </h3>
-                        <div id="flush-collapseFive" class="accordion-collapse collapse "
-                            data-bs-parent="#accordionFlushExample2">
-                            <div class="accordion-body p-0 pe-5 mx-0 mb-0 mt-2 text-body-secondary leading-7 text-base">
-                                16 anos (Desde que assinado o termo de responsabilidade pelo pai e mãe [ambos] ou
-                                responsável)
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item pb-4" data-aos-delay="550" data-aos="fade-up" data-aos-duration="1000">
-                        <h3 class="accordion-header">
-                            <button
-                                class="accordion-button align-items-start p-0 pt-4 text-body-emphasis leading-7 text-base shadow-none collapsed fw-semibold"
-                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix"
-                                aria-expanded="false" aria-controls="flush-collapseSix">
-                                Como faço para pedir reembolso?
-                            </button>
-                        </h3>
-                        <div id="flush-collapseSix" class="accordion-collapse collapse "
-                            data-bs-parent="#accordionFlushExample2">
-                            <div class="accordion-body p-0 pe-5 mx-0 mb-0 mt-2 text-body-secondary leading-7 text-base">
-                                Não será realizado reembolso de inscrição.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item pb-4" data-aos-delay="600" data-aos="fade-up" data-aos-duration="1000">
-                        <h3 class="accordion-header">
-                            <button
-                                class="accordion-button align-items-start p-0 pt-4 text-body-emphasis leading-7 text-base shadow-none collapsed fw-semibold"
-                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven"
-                                aria-expanded="false" aria-controls="flush-collapseSeven">
-                                Quando e onde posso retirar meu kit?
-                            </button>
-                        </h3>
-                        <div id="flush-collapseSeven" class="accordion-collapse collapse "
-                            data-bs-parent="#accordionFlushExample2">
-                            <div class="accordion-body p-0 pe-5 mx-0 mb-0 mt-2 text-body-secondary leading-7 text-base">
-                                Retirada somente no dia 30 de novembro de 2024 (sábado) das 08h às 18h no
-                                Yellowstone
-                                Park.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item pb-4" data-aos-delay="650" data-aos="fade-up" data-aos-duration="1000">
-                        <h3 class="accordion-header">
-                            <button
-                                class="accordion-button align-items-start p-0 pt-4 text-body-emphasis leading-7 text-base shadow-none collapsed fw-semibold"
-                                type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight"
-                                aria-expanded="false" aria-controls="flush-collapseEight">
-                                Não vou conseguir retirar meu kit, como faço?
-                            </button>
-                        </h3>
-                        <div id="flush-collapseEight" class="accordion-collapse collapse "
-                            data-bs-parent="#accordionFlushExample2">
-                            <div class="accordion-body p-0 pe-5 mx-0 mb-0 mt-2 text-body-secondary leading-7 text-base">
-                                Pode ser retirado por terceiros, desde que tenha assinado o Termo de
-                                Responsabilidade +
-                                cópia do documento com foto do inscrito.
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -959,6 +483,9 @@
     <!-- Jarallax JS: Optional video extension -->
     <script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax-video.min.js"></script>
 
+    <script src="./assets/js/event-data.js"></script>
+
+    <script src="./assets/js/render.js"></script>
 
     <script src="./assets/js/scripts.js"></script>
 
