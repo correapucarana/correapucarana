@@ -8,7 +8,7 @@ const eventInfo = {
     "videoUrl": "https://www.youtube.com/watch?v=WvyKlCXGteM",
   },
   "dates": {
-    "registrationStart": "2025-09-10T00:00:00",
+    "registrationStart": "2025-09-19T12:00:00",
     "registrationEnd": "2025-11-11T23:59:59",
     "eventDate": "2025-11-29T19:30:00"
   },
@@ -138,7 +138,7 @@ const eventInfo = {
       "id": "kit-ouro",
       "name": "Kit Ouro",
       "price": "R$ 79,90",
-      "image": "./assets/img/corre-apucarana-2/kit/kit-em-breve.jpg",
+      "image": "./assets/img/corre-apucarana-2/kit/kit-ouro.jpg",
       "items": [
         "Camiseta",
         "Sacola Personalizada",
@@ -157,7 +157,7 @@ const eventInfo = {
       "id": "kit-prata",
       "name": "Kit Prata",
       "price": "R$ 54,90",
-      "image": "./assets/img/corre-apucarana-2/kit/kit-em-breve.jpg",
+      "image": "./assets/img/corre-apucarana-2/kit/kit-prata.jpg",
       "items": [
         "Sacola Personalizada",
         "Boné (Masculino) ou Viseira (Feminino)",
