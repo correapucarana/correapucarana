@@ -51,7 +51,7 @@ const eventInfo = {
         ">: Rua Dom José Marelo",
         ">: Rua São Paulo",
         ">: Avenida Curitiba",
-        ">: Praça Rui Barbosa (via do lado da Caixa Econômica Federal)",
+        ">: Praça Rui Barbosa (via do lado do Bradesco)",
         ">: Rua Dr. Oswaldo Cruz",
         "Chegada: Chegada no Yellowstone"
       ]
