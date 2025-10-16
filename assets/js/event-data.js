@@ -130,6 +130,10 @@ const eventInfo = {
       {
         "src": "assets/img/corre-apucarana-2/patrocinadores/eduardo-daniel.jpg",
         "alt": "EDUARDO DANIEL"
+      },
+      {
+        "src": "assets/img/corre-apucarana-2/patrocinadores/agencia-seis.png",
+        "alt": "AGÊNCIA SEIS"
       }
     ]
   },
