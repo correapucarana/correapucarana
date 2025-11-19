@@ -28,7 +28,7 @@ const eventInfo = {
     "instagram": {
       "name": "@teammatheusmiguel",
       "profileUrl": "https://www.instagram.com/teammatheusmiguel/",
-      "postUrl": "https://www.instagram.com/p/DNG0FTHS9lb/?utm_source=ig_web_copy_link&igsh=bWtudnpwOHE4YmJu"
+      "postUrl": "https://www.instagram.com/p/DRNkzkZFIlW/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
     }
   },
   "courses": [
@@ -219,14 +219,14 @@ const eventInfo = {
     }
   ],
   "kitPickup": {
-    "show": false,
+    "show": true,
     "notice": "LEVE 1 KG DE ALIMENTO NÃO PERECÍVEL PARA RETIRADA DO KIT!",
     "events": [
       {
         "day": 28,
         "month": "NOVEMBRO",
         "weekday": "SEXTA-FEIRA",
-        "time": "10:00 ÀS 19:00",
+        "time": "13:00 ÀS 19:00",
         "locationTitle": "OFICIAL MED APUCARANA",
         "address": "R. CEL. LUIZ JOSÉ DOS SANTOS, 131 - CENTRO, APUCARANA - PR, 86800-070"
       },
@@ -234,14 +234,22 @@ const eventInfo = {
         "day": 29,
         "month": "NOVEMBRO",
         "weekday": "SÁBADO",
-        "time": "13:00 ÀS 18:00",
+        "time": "09:00 ÀS 12:00",
+        "locationTitle": "OFICIAL MED APUCARANA",
+        "address": "R. CEL. LUIZ JOSÉ DOS SANTOS, 131 - CENTRO, APUCARANA - PR, 86800-070"
+      },
+      {
+        "day": 29,
+        "month": "NOVEMBRO",
+        "weekday": "SÁBADO",
+        "time": "15:00 ÀS 18:00",
         "locationTitle": "YELLOWSTONE PARK",
         "address": "R. DR. OSWALDO CRUZ, 1420 - CENTRO, APUCARANA - PR, 86800-720"
       }
     ]
   },
   "checklist": {
-    "show": false,
+    "show": true,
     "title": "O QUE LEVAR?",
     "items": [
       {
@@ -252,17 +260,12 @@ const eventInfo = {
       {
         "icon": "document-text-outline",
         "title": "TERMO DE RESPONSABILIDADE",
-        "description": "FÍSICO OU DIGITAL",
+        "description": "Apenas para quem não fez inscrição online",
         "actions": [
           {
             "text": "FÍSICO (PDF)",
-            "url": "https://drive.google.com/file/d/1RkkUjMvJve9cgoUF-D6jsHpY1acVoFrq/view?usp=drivesdk",
+            "url": "https://drive.google.com/file/d/14mLw37K7hh1hXWqoTCIQnOz89dswPG9_/view",
             "icon": "fa fa-download"
-          },
-          {
-            "text": "DIGITAL (FORMS)",
-            "url": "https://forms.gle/ta8E5tk87DyB7EjZA",
-            "icon": "fa fa-upload"
           }
         ]
       },
@@ -279,7 +282,7 @@ const eventInfo = {
     ]
   },
   "warnings": {
-    "show": false,
+    "show": true,
     "warnings": [
       "Não serão entregues kits a terceiros sem o termo de responsabilidade.",
       "Não serão entregues kits após o horário previsto."
