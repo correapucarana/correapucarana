@@ -248,11 +248,15 @@ function updateDateOrCountdown() {
   if (!dataEventoEl) return;
 
   const agora = new Date();
-
   function formatarDataExtensa(data) {
     const meses = ["JANEIRO", "FEVEREIRO", "MARÇO", "ABRIL", "MAIO", "JUNHO",
       "JULHO", "AGOSTO", "SETEMBRO", "OUTUBRO", "NOVEMBRO", "DEZEMBRO"];
     return `${data.getDate()} DE ${meses[data.getMonth()]} DE ${data.getFullYear()}`;
+  }
+
+  function formatarHoraExtensa(data) {
+    const pad = (n) => String(n).padStart(2, '0');
+    return `${pad(data.getHours())}:${pad(data.getMinutes())}`;
   }
 
   function atualizarCountdown() {
@@ -284,8 +288,9 @@ function updateDateOrCountdown() {
   if (agora <= dates.registrationEnd) {
     dataEventoEl.textContent = formatarDataExtensa(dates.eventDate);
   } else {
-    atualizarCountdown();
-    const interval = setInterval(atualizarCountdown, 1000);
+    dataEventoEl.innerHTML = `<span class="text-success">${formatarDataExtensa(dates.eventDate)}</span><br><span class="text-info">${formatarHoraExtensa(dates.eventDate)}</span>`;
+    // atualizarCountdown();
+    // const interval = setInterval(atualizarCountdown, 1000);
   }
 }
 
